@@ -53,10 +53,10 @@ const Crew = () => {
 
 
                                         <div className="crew-desig">
-                                            {data.role}
+                                            {data.role.toUpperCase()}
                                         </div>
                                         <div className="crew-name">
-                                            {data.name}
+                                            {data.name.toUpperCase()}
                                         </div>
                                         <div className="crew-description">
                                             {data.bio}
