@@ -14,7 +14,8 @@
   margin-left: 46px;
 }
 
-.Navbar__Link {
+.Navbar__Link,
+.Navbar__Link-brand {
   padding-right: 20px;
   padding-top: 30px;
   margin-right: 40px;
@@ -48,6 +49,8 @@
 }
 
 .Navbar__Link-toggle {
+  padding-top: 30px;
+  margin-right: 40px;
   display: none;
 }
 @media only screen and (max-width: 1000px) {
@@ -67,8 +70,16 @@
   }
 
   .Navbar__Items--right {
-    margin-left: 0;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    margin-top: 66px;
+    z-index: 2;
+    margin-left: 10px;
+    margin-right: 0;
     padding-right: 20px;
+    padding-left: 30px;
+    display: none;
   }
 
   .Navbar__ToggleShow {
@@ -78,7 +89,9 @@
   .Navbar__Link-toggle {
     align-self: flex-end;
     display: initial;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
+  }
+  .Navbar {
   }
 }
