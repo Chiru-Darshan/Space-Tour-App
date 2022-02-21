@@ -17,7 +17,7 @@ function App() {
           </div>
           <div className="main-content">
             <Routes>
-              <Route path="/" element={<Home />} exact />
+              <Route path="/Space-Tour-App" element={<Home />} exact />
               <Route path="destinations" element={< Destinations />} />
               <Route path="crew" element={< Crew />} />
               <Route path="technology" element={< Technology />} />
