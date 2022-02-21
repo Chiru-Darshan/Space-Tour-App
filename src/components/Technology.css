@@ -1,0 +1,134 @@
+#technology-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.content-section2 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#tech-img {
+  position: absolute;
+  right: 0;
+  margin-top: 100px;
+}
+
+.tech-header-h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 22;
+  font-size: 28px;
+  text-align: left;
+}
+
+.tech-header {
+  padding-top: 80px;
+}
+
+.content-section1 {
+  padding-left: 80px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-content {
+  /* background-color: aqua; */
+  height: 470px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.tech-content1 {
+  height: 100%;
+
+  width: 20%;
+}
+.tech-content2 {
+  height: 100%;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+.tech-nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  height: 100%;
+}
+.tech-nav-link {
+  list-style-type: none;
+  font-size: 40px;
+
+  height: 70px;
+  width: 70px;
+
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  text-align: center;
+}
+.tech-nav-link:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #0b0d17;
+}
+
+.tech-name {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64.18px;
+  padding-top: 10px;
+}
+
+.tech-desc {
+  font-family: "Barlow Condensed", sans-serif;
+  width: 80%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #d0d6f9;
+  padding-top: 40px;
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .content-section1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .tech-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .tech-nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    /* height: auto; */
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    background-color: aqua;
+  }
+  .tech-nav-link {
+    list-style-type: none;
+    font-size: 18px;
+
+    height: 30px;
+    width: 30px;
+
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    text-align: center;
+  }
+  #technology-main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

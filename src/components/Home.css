@@ -1,0 +1,68 @@
+.home-section {
+  margin-top: 150px;
+  height: 100%;
+}
+
+#explore {
+  height: 224px;
+  width: 224px;
+  text-align: center;
+  border-radius: 50%;
+  outline: none;
+  border: 0px;
+  letter-spacing: 0.4em;
+  background-color: white;
+}
+
+#explore:hover {
+  box-shadow: 0 0 3px 50px rgba(11, 12, 23, 0.4);
+  transition-duration: 5ms;
+  transition-delay: 10ms;
+  transition-timing-function: ease;
+}
+
+.home-section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+#label-h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4.75;
+  font-size: 28px;
+}
+#label-h1 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 150px;
+}
+
+#home-sub-heading {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4.75;
+  font-size: 16px;
+  width: 70%;
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .home-section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #label-h1 {
+    font-size: 25vw;
+  }
+  .home-section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

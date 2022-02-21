@@ -1,38 +1,50 @@
 .App {
-  text-align: center;
+  background-image: url("./images/home/background-home-desktop.jpg");
+  min-height: 100%;
+  background-color: black;
+
+  /* background-size: cover; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 992px) {
+  .App {
+    background-image: url("./images/home/background-home-tablet.jpg");
+
+    min-height: 100%;
+    background-color: black;
+
+    /* background-size: cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .App {
+    background-image: url("./images/home/background-home-mobile.jpg");
 
-.App-link {
-  color: #61dafb;
-}
+    min-height: 100%;
+    background-color: black;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    /* background-size: cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
   }
 }

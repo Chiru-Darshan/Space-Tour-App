@@ -1,0 +1,84 @@
+.Navbar {
+  /* background-color: #46acc2; */
+  display: flex;
+
+  padding-left: 16px;
+
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7;
+  height: 96px;
+
+  margin-top: 40px;
+  margin-left: 46px;
+}
+
+.Navbar__Link {
+  padding-right: 20px;
+  padding-top: 30px;
+  margin-right: 40px;
+  color: white;
+}
+
+.active {
+  border-bottom: 5px solid white;
+  color: white;
+}
+.active:hover {
+  color: white;
+}
+
+.Navbar__Link:not(.active):hover {
+  border-bottom: 5px solid rgb(158, 154, 154);
+  color: white;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin-left: auto;
+  background-color: rgba(131, 122, 122, 0.2);
+  padding-right: 200px;
+  padding-left: 130px;
+  /* background-color: #ffffff; */
+  backdrop-filter: blur(10px);
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .Navbar__Items--right {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+
+  .Navbar__Items {
+    display: none;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+    padding-right: 20px;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}

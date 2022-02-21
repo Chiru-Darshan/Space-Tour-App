@@ -1,0 +1,152 @@
+#crew {
+  width: 100%;
+
+  padding-left: 10%;
+  padding-bottom: 0;
+}
+
+.crew-section-1 {
+  height: 100%;
+  padding-top: 100px;
+}
+
+.crew-section-1-contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.crew-header-h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 22;
+  font-size: 28px;
+  text-align: left;
+}
+
+.crew-header {
+  padding-top: 80px;
+}
+
+.crew-desig {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36.67px;
+  margin-top: 100px;
+  color: #d0d6f9;
+}
+
+.crew-name {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64.18px;
+  padding-top: 10px;
+}
+
+.crew-description {
+  font-family: "Barlow Condensed", sans-serif;
+  width: 80%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #d0d6f9;
+  padding-top: 40px;
+}
+
+.crew-picture {
+  height: 712px;
+  width: 568px;
+  margin-bottom: 0;
+  padding-top: 50px;
+  /* background-color: aqua; */
+}
+.crew-section-2 {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.pagination {
+  margin-top: 50px;
+}
+.pagination > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.pagination > ul > li {
+  margin-right: 10px;
+  list-style-type: none;
+  background-color: white;
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .crew-section-1 {
+    text-align: center;
+  }
+  .crew-description {
+    width: 100%;
+  }
+  .crew-picture {
+    height: 420px;
+    width: 360px;
+    margin: 0 auto;
+  }
+  .crew-desig {
+    margin-top: 30px;
+  }
+  .crew-header {
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  /* .crew-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .crew-section-1-contents {
+    margin-bottom: 60px;
+  }
+  .crew-section-1 {
+    padding-top: 10px;
+  }
+  .crew-section-2 {
+    border-bottom: 2px solid black;
+  } */
+}
+
+@media (max-width: 480px) {
+  .crew-section-1 {
+    text-align: center;
+  }
+  .crew-description {
+    width: 100%;
+  }
+  .crew-picture {
+    height: 420px;
+    width: 360px;
+    margin: 0 auto;
+  }
+  .crew-desig {
+    margin-top: 30px;
+  }
+  .crew-header {
+    padding-top: 30px;
+  }
+  .crew-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .crew-section-1-contents {
+    margin-bottom: 60px;
+  }
+  .crew-section-1 {
+    padding-top: 10px;
+  }
+  .crew-section-2 {
+    border-bottom: 2px solid black;
+  }
+}
