@@ -50,11 +50,11 @@ const Destinations = () => {
         <div className="col-lg-6 destinations-section1 d-flex flex-column pt-5">
           <label id="dest-header-h1" > <span style={{ color: "#D0D6F9", letterSpacing: '4.73' }}>   01  </span> &nbsp; &nbsp;<span>PICK YOUR DESTINATION</span> </label>
 
-          <img src={process.env.PUBLIC_URL + imgPath} alt="No Img Available" width="400px" height="400px" className='fluid mt-5'></img>
+          <img src={process.env.PUBLIC_URL + imgPath} alt="No Img Available" width="400px" height="400px" className='fluid mt-5' id="dest-img"></img>
         </div>
         <div className="col-lg-6 destinations-section2 h-100 mt-5">
           <div id="destination-contents" className='w-100 h-100 pt-5 d-flex flex-column'>
-            <div id="#destination-menu">
+            <div id="destination-menu">
               <ul id="destinations-nav">
 
                 {destData.map((data, key) =>
