@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: "Bellefair";
+  src: url("./fonts/Bellefair/Bellefair-Regular.ttf") format("truetype");
+} */
+
 body {
   margin: 0;
   font-family: "Bellefair", sans-serif;
