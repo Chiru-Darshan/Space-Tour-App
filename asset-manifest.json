@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Space-Tour-App/static/css/main.ad5c5237.css",
-    "main.js": "/Space-Tour-App/static/js/main.78ca839b.js",
+    "main.js": "/Space-Tour-App/static/js/main.baf9f028.js",
     "static/js/787.3e704ad1.chunk.js": "/Space-Tour-App/static/js/787.3e704ad1.chunk.js",
     "static/media/background-home-desktop.jpg": "/Space-Tour-App/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-home-tablet.jpg": "/Space-Tour-App/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
     "static/media/background-home-mobile.jpg": "/Space-Tour-App/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
     "index.html": "/Space-Tour-App/index.html",
     "main.ad5c5237.css.map": "/Space-Tour-App/static/css/main.ad5c5237.css.map",
-    "main.78ca839b.js.map": "/Space-Tour-App/static/js/main.78ca839b.js.map",
+    "main.baf9f028.js.map": "/Space-Tour-App/static/js/main.baf9f028.js.map",
     "787.3e704ad1.chunk.js.map": "/Space-Tour-App/static/js/787.3e704ad1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad5c5237.css",
-    "static/js/main.78ca839b.js"
+    "static/js/main.baf9f028.js"
   ]
 }
