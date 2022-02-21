@@ -53,7 +53,7 @@ const Nav = () => {
                 <nav className="Navbar__Items Navbar__Items--right">
 
 
-                    <Link to="/" style={linkStyles} className="Navbar__Link" onClick={changeActiveState}> <strong>00</strong> &nbsp; &nbsp; HOME</Link>
+                    <Link to="//Space-Tour-App" style={linkStyles} className="Navbar__Link" onClick={changeActiveState}> <strong>00</strong> &nbsp; &nbsp; HOME</Link>
                     <Link to="/destinations" style={linkStyles} className="Navbar__Link" onClick={changeActiveState}> <strong>01</strong>  &nbsp; &nbsp; DESTINATION</Link>
                     <Link to="/crew" style={linkStyles} className="Navbar__Link" onClick={changeActiveState}> <strong>03</strong>  &nbsp; &nbsp; CREW</Link>
                     <Link to="/technology" style={linkStyles} className="Navbar__Link" onClick={changeActiveState}> <strong>04</strong> &nbsp; &nbsp;TECHNOLOGY</Link>
