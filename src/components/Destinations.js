@@ -31,6 +31,7 @@ const Destinations = () => {
       let url = process.env.PUBLIC_URL + '/images/destination/background-destination-desktop.jpg'
       app.style.backgroundImage = "url(" + url + ")"
 
+
     }
   }
 

@@ -10,8 +10,11 @@
   border-radius: 50%;
   outline: none;
   border: 0px;
+  text-decoration: none;
+  padding-top: 100px;
   letter-spacing: 0.4em;
   background-color: white;
+  color: #0b0d17;
 }
 
 #explore:hover {
