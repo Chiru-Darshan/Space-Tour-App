@@ -13,19 +13,54 @@ const Destinations = () => {
   const [travel, setTravel] = useState(0)
   const [imgPath, setImage] = useState("")
 
+
+  const changePicture = (x) => {
+    if (x.matches && window.location.pathname === '/destination') { // If media query matches
+
+
+      let app = document.getElementsByClassName("App")[0];
+      let url = process.env.PUBLIC_URL + '/images/destination/background-destination-tablet.jpg'
+      app.style.backgroundImage = "url(" + url + ")"
+    }
+
+  }
+  const changePictureToPortrait = (x) => {
+    if (x.matches && window.location.pathname === '/destination') {
+
+      let app = document.getElementsByClassName("App")[0];
+      let url = process.env.PUBLIC_URL + '/images/destination/background-destination-desktop.jpg'
+      app.style.backgroundImage = "url(" + url + ")"
+
+    }
+  }
+
+
+
+
+
   useEffect(() => {
     const data = require('../data.json')
-    console.log(`file : ${data}`)
+
     setDestData(data.destinations)
     setDestName(data.destinations[0].name.toUpperCase())
     setDescription(data.destinations[0].description)
     setDistance(data.destinations[0].distance)
     setTravel(data.destinations[0].travel)
     setImage(data.destinations[0].images.png)
-    console.log(data.destinations[0].images.png)
 
 
-    console.log(`destinations : ${data.destinations}`)
+
+
+    let x = window.matchMedia("(max-width: 992px)");
+    x.addEventListener("change", changePicture)
+
+    let y = window.matchMedia("(min-width: 992px)");
+    y.addEventListener("change", changePictureToPortrait)
+    let app = document.getElementsByClassName("App")[0];
+    let url = process.env.PUBLIC_URL + '/images/destination/background-destination-desktop.jpg'
+    app.style.backgroundImage = "url(" + url + ")"
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const changeActiveState = (event, name) => {

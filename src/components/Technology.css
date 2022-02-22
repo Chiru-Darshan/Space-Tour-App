@@ -7,6 +7,11 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.tech-nav-link:not(.techActive):hover {
+  color: #0b0d17;
+  background-color: white;
+}
 .technology-content1 {
   height: 100%;
   width: 50%;
@@ -54,39 +59,6 @@
   background-color: transparent;
   text-align: center;
 }
-/* 
-.tech-content {
-  
-  height: 470px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.tech-content1 {
-  height: 100%;
-  width: 20%;
-}
-
-.tech-nav-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: space-evenly;
-  height: 100%;
-}
-.tech-nav-link {
-  list-style-type: none;
-  font-size: 40px;
-
-  height: 70px;
-  width: 70px;
-
-  border: 1px solid white;
-  border-radius: 50%;
-  background-color: transparent;
-  text-align: center;
-} */
 
 .tech-header-h1 {
   font-family: "Barlow Condensed", sans-serif;
@@ -129,6 +101,12 @@
   display: flex;
   justify-content: flex-end;
 }
+.techActive {
+  /* color: #0b0d17;
+  background-color: white; */
+  color: #0b0d17;
+  background-color: white;
+}
 
 @media only screen and (max-width: 768px) {
   .main-section {
@@ -140,16 +118,22 @@
   .technology-content1 {
     height: 100%;
     width: 100%;
+    margin-top: 5px;
+    padding-top: 0px;
   }
   .technology-content2 {
-    background-color: rgb(196, 193, 48);
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 2px;
   }
   .tech-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-top: 2px;
   }
   .tech-content1 {
     height: auto;
@@ -161,6 +145,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-top: 2px;
   }
   .tech-nav-link {
     list-style-type: none;
@@ -179,6 +164,7 @@
   .content-section1 {
     padding-left: 0px;
     text-align: center;
+    padding-top: 0px;
   }
   .tech-desc {
     width: 100%;
@@ -193,5 +179,11 @@
   }
   .tech-content2 {
     margin-top: 10px;
+  }
+  #tech-img {
+    height: 310px;
+    min-width: 100%;
+    padding-top: 40px;
+    margin-bottom: 5px;
   }
 }
