@@ -122,8 +122,20 @@
   }
   #travel-details {
     padding-left: 30px;
+    margin-bottom: 40px;
   }
   #destinations-nav > li {
     padding-top: 0px;
+  }
+
+  #dest-header-h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 22;
+    font-size: 22px;
+    text-align: left;
+  }
+  #dest-name {
+    font-family: "Bellefair", sans-serif;
+    font-size: 80px;
   }
 }

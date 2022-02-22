@@ -49,6 +49,13 @@ const Technology = () => {
             let app = document.getElementsByClassName("App")[0];
             let url = process.env.PUBLIC_URL + '/images/technology/background-technology-tablet.jpg'
             app.style.backgroundImage = "url(" + url + ")"
+            app.style.backgroundSize = "cover"
+            app.style.backgroundRepeat = "no-repeat"
+            app.style.backgroundPosition = " center center"
+            app.style.minHeight = "100%"
+            app.style.backgroundAttachment = "fixed"
+            app.style.width = "100%"
+
         }
 
     }
@@ -60,6 +67,12 @@ const Technology = () => {
             let app = document.getElementsByClassName("App")[0];
             let url = process.env.PUBLIC_URL + '/images/technology/background-technology-desktop.jpg'
             app.style.backgroundImage = "url(" + url + ")"
+            app.style.backgroundSize = "cover"
+            app.style.backgroundRepeat = "no-repeat"
+            app.style.backgroundPosition = " center center"
+            app.style.minHeight = "100%"
+            app.style.backgroundAttachment = "fixed"
+            app.style.width = "100%"
 
         }
     }
@@ -73,8 +86,31 @@ const Technology = () => {
         let y = window.matchMedia("(min-width: 992px)");
         y.addEventListener("change", changePictureToPortrait)
         let app = document.getElementsByClassName("App")[0];
-        let url = process.env.PUBLIC_URL + '/images/technology/background-technology-desktop.jpg'
-        app.style.backgroundImage = "url(" + url + ")"
+
+
+
+        if (x.matches) {
+            let app = document.getElementsByClassName("App")[0];
+            let url = process.env.PUBLIC_URL + '/images/technology/background-technology-tablet.jpg'
+            app.style.backgroundImage = "url(" + url + ")"
+            app.style.backgroundSize = "cover"
+            app.style.backgroundRepeat = "no-repeat"
+            app.style.backgroundPosition = " center center"
+            app.style.minHeight = "100%"
+            app.style.backgroundAttachment = "fixed"
+            app.style.width = "100%"
+        }
+        else {
+            let url = process.env.PUBLIC_URL + '/images/technology/background-technology-desktop.jpg'
+            app.style.backgroundImage = "url(" + url + ")"
+            app.style.backgroundSize = "cover"
+            app.style.backgroundRepeat = "no-repeat"
+            app.style.backgroundPosition = " center center"
+            app.style.minHeight = "100%"
+            app.style.backgroundAttachment = "fixed"
+            app.style.width = "100%"
+
+        }
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
